@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: sistema-presenca
+    runtime: python312
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12
